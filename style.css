@@ -1,0 +1,159 @@
+body {
+	font-family: bahnschrift, verdana, sans-serif;
+	font-size: 18px;
+}
+
+header {
+	padding: 5px 450px 15px;
+	text-align: center;
+}
+
+header p {
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+.header_gauche {
+	margin-top: 5px;
+}
+
+.titre {
+	font-size: 48px;
+	font-weight: 800;
+}
+
+.soustitre {
+	font-size: 24px;
+	color: #De6411;
+}
+
+nav {
+	display: grid;
+	grid-template-columns: auto auto auto auto auto auto;
+	padding: 0 450px;
+	background-color: #272424;
+}
+
+nav a {
+	text-decoration: none;
+	color: white;
+	padding: 10px 10px;
+	text-align: center;
+	vertical-align: middle;
+}
+
+nav a:hover {
+	background-color: #De6411;
+}
+
+section {
+	padding: 0 450px;
+	margin-top: 10px;
+	margin-bottom: 40px;
+}
+
+h2 {
+	margin-top: 20px;
+}
+
+.fa-circle {
+	color: #De6411;
+	font-size: 16px;
+}
+
+.clair {
+	color: #F99e60;
+	font-size: 16px;
+}
+
+.puces_competences {
+	line-height: 2;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+}
+
+.presentation {
+	margin-top: 40px;
+}
+
+.grid {
+	display: grid;
+	grid-template-columns: 0.5fr 1.5fr;
+	margin-bottom: 10px;
+}
+
+span {
+	color: grey;
+}
+
+footer {
+	padding: 0 450px;
+}
+
+.footer {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+
+
+input {
+    height: 35px;
+}
+
+#name, #email, #entreprise {
+	width: 400px;
+}
+
+#object {
+	width: 750px;
+}
+
+textarea {
+    height: 200px;
+	width: 750px;
+}
+
+input, textarea {
+    border: 0.5px solid #c5cfd9;
+    border-radius: 5px;
+}
+
+label {
+    line-height: 2;
+    font-size: 20px;
+}
+
+button {
+    background-color: #272424;
+    color: white;
+    height: 40px;
+    width: 120px;
+    font-weight: 800;
+    font-family: bahnschrift, verdana, sans-serif;
+    border: none;
+    border-radius: 5px;
+}
+
+button a {
+    text-decoration: none;
+	font-size: 20px;
+    color:white;
+	transition: font-size 1s;
+}
+
+button a:hover {
+	font-size: 24px;
+	transition: font-size 1s;
+}
+
+h3 {
+	color: #De6411;
+	font-weight: 500;
+}
+
+/*
+Mettre icones footer
+plus autres icones ?
+faire bordure orange
+changer style texte dans input
+*/
