@@ -111,11 +111,17 @@ input {
 textarea {
     height: 200px;
 	width: 750px;
+	padding-top: 10px;
 }
 
 input, textarea {
-    border: 0.5px solid #c5cfd9;
+    padding-left: 10px;
+	padding-right: 10px;
+	border: 0.5px solid #c5cfd9;
     border-radius: 5px;
+	font-family: bahnschrift, verdana, sans-serif;
+	font-size: 18px;
+	color: #De6411;
 }
 
 label {
@@ -151,9 +157,10 @@ h3 {
 	font-weight: 500;
 }
 
+fa-envelope {
+	color: white;
+}
+
 /*
-Mettre icones footer
-plus autres icones ?
 faire bordure orange
-changer style texte dans input
 */
