@@ -140,8 +140,8 @@ input, textarea {
 	color: black;
 }
 
-input:focus {
-	 border-color: red;
+input:focus, textarea:focus {
+	 outline-color: #989999;
  }
 
 label {
@@ -158,6 +158,7 @@ button {
     font-family: bahnschrift, verdana, sans-serif;
     border: none;
     border-radius: 5px;
+	padding-top: 5px;
 }
 
 button a {
@@ -172,17 +173,18 @@ button a:hover {
 	transition: font-size 1s;
 }
 
+button:active {
+	background-color: #De6411;
+}
+
 h3 {
 	color: #De6411;
 	font-weight: 500;
 }
 
-fa-envelope {
-	color: white;
-}
-
 .fa-linkedin, .fa-github {
 	font-size: 50px;
+	color: black;
 }
 
 .fa-linkedin {
@@ -190,12 +192,30 @@ fa-envelope {
 	margin-bottom: 10px;
 }
 
-/*
-Voir pour border input:focus
+.fa-linkedin:hover {
+	color: #1060a6;
+	transition: color 0.5s;
+}
 
-Ajout réseaux sociaux (transition hover, couleur)
-Liens vers projets ?
-Transitions pour les liens
+.fa-github:hover {
+	color: #6f2c8b;
+	transition: color 0.5s;
+}
 
-Menu footer ????
-*/
+.arrow {
+	font-size: 30px;
+	margin-top: 145px;
+	position: fixed;
+	background-color: black;
+	padding: 10px 11px 5px;
+	border-radius: 5px;
+	opacity: 0.6;
+	color: white;
+	right: 9px;
+	box-shadow: 0 0 20px black;
+}
+
+.arrow:active {
+	background-color: #De6411;
+	box-shadow: 0 0 20px #De6411;
+}
