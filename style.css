@@ -82,6 +82,22 @@ h2 {
 	margin-bottom: 10px;
 }
 
+.paragraphe_tableau {
+	margin: 0;
+	padding: 0;
+	padding-bottom: 20px;
+}
+
+.paragraphe_tableau_dernier {
+	margin: 0;
+	padding: 0;
+}
+
+.date_bordure {
+	border-right: 4px solid #De6411;
+	margin-right: 10px;
+}
+
 span {
 	color: grey;
 }
@@ -121,8 +137,12 @@ input, textarea {
     border-radius: 5px;
 	font-family: bahnschrift, verdana, sans-serif;
 	font-size: 18px;
-	color: #De6411;
+	color: black;
 }
+
+input:focus {
+	 border-color: red;
+ }
 
 label {
     line-height: 2;
@@ -160,7 +180,3 @@ h3 {
 fa-envelope {
 	color: white;
 }
-
-/*
-faire bordure orange
-*/
