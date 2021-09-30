@@ -108,7 +108,7 @@ footer {
 
 .footer {
 	display: grid;
-	grid-template-columns: 1fr 1fr;
+	grid-template-columns: 1.25fr 1.25fr 0.5fr;
 }
 
 
@@ -181,8 +181,19 @@ fa-envelope {
 	color: white;
 }
 
+.fa-linkedin, .fa-github {
+	font-size: 50px;
+}
+
+.fa-linkedin {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
 /*
-Ajout réseaux sociaux
+Voir pour border input:focus
+
+Ajout réseaux sociaux (transition hover, couleur)
 Liens vers projets ?
 Transitions pour les liens
 */
