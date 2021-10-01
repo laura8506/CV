@@ -4,7 +4,7 @@ body {
 }
 
 header {
-	padding: 5px 450px 15px;
+	padding: 5px 23.4vw 15px;
 	text-align: center;
 }
 
@@ -30,7 +30,7 @@ header p {
 nav {
 	display: grid;
 	grid-template-columns: auto auto auto auto auto auto;
-	padding: 0 450px;
+	padding: 0 23.4vw;
 	background-color: #272424;
 }
 
@@ -47,7 +47,7 @@ nav a:hover {
 }
 
 section {
-	padding: 0 450px;
+	padding: 0 23.4vw;
 	margin-top: 10px;
 	margin-bottom: 40px;
 }
@@ -103,7 +103,7 @@ span {
 }
 
 footer {
-	padding: 0 450px;
+	padding: 0 23.4vw;
 }
 
 .footer {
