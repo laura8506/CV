@@ -4,7 +4,6 @@ body {
 }
 
 header {
-	padding: 5px 23.4vw 15px;
 	text-align: center;
 }
 
@@ -28,26 +27,17 @@ header p {
 }
 
 nav {
-	display: grid;
-	grid-template-columns: auto auto auto auto auto auto;
-	padding: 0 23.4vw;
 	background-color: #272424;
 }
 
 nav a {
 	text-decoration: none;
 	color: white;
-	padding: 10px 10px;
 	text-align: center;
 	vertical-align: middle;
 }
 
-nav a:hover {
-	background-color: #De6411;
-}
-
 section {
-	padding: 0 23.4vw;
 	margin-top: 10px;
 	margin-bottom: 40px;
 }
@@ -58,24 +48,20 @@ h2 {
 
 .fa-circle {
 	color: #De6411;
-	font-size: 16px;
 }
 
 .clair {
 	color: #F99e60;
-	font-size: 16px;
 }
 
 .puces_competences {
 	line-height: 2;
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
 }
 
 .presentation {
 	margin-top: 40px;
 }
-
+/* 
 .grid {
 	display: grid;
 	grid-template-columns: 0.5fr 1.5fr;
@@ -96,37 +82,18 @@ h2 {
 .date_bordure {
 	border-right: 4px solid #De6411;
 	margin-right: 10px;
-}
+} */
 
 span {
 	color: grey;
 }
 
-footer {
-	padding: 0 23.4vw;
-}
-
-.footer {
-	display: grid;
-	grid-template-columns: 1.25fr 1.25fr 0.5fr;
-}
-
-
 input {
     height: 35px;
 }
 
-#name, #email, #entreprise {
-	width: 400px;
-}
-
-#object {
-	width: 750px;
-}
-
 textarea {
     height: 200px;
-	width: 750px;
 	padding-top: 10px;
 }
 
@@ -220,3 +187,331 @@ h3 {
 	background-color: #De6411;
 	box-shadow: 0 0 20px #De6411;
 }
+
+
+/*
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+@media (min-width: 1281px) {
+	header {
+		padding: 5px 23.4vw 15px;
+	}
+	
+	nav, section, footer {
+		padding: 0 23.4vw;
+	}
+
+	nav a {
+		text-decoration: none;
+		color: white;
+		padding: 10px 10px;
+		text-align: center;
+		vertical-align: middle;
+	}
+	
+	nav a:hover {
+		background-color: #De6411;
+	}
+
+	.puces_competences {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+
+	.fa-circle {
+		font-size: 16px;
+	}
+
+	.clair {
+		font-size: 16px;
+	}
+
+	#name, #email, #entreprise {
+		width: 400px;
+	}
+	
+	#object {
+		width: 750px;
+	}
+	
+	textarea {
+		width: 750px;
+	}
+
+	.footer {
+		display: grid;
+		grid-template-columns: 1.25fr 1.25fr 0.5fr;
+	}
+
+}
+
+/*
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+
+@media (min-width: 1026px) and (max-width: 1280px) {
+	header {
+		padding: 5px 23.4vw 15px;
+	}
+	
+	nav, section, footer {
+		padding: 0 10vw;
+	}
+
+	nav a {
+		text-decoration: none;
+		color: white;
+		padding: 10px 10px;
+		text-align: center;
+		vertical-align: middle;
+	}
+	
+	nav a:hover {
+		background-color: #De6411;
+	}
+
+	.puces_competences {
+		display: grid;
+		grid-template-columns: 0.9fr 1.1fr 1fr;
+	}
+
+	.fa-circle {
+		font-size: 14px;
+	}
+
+	.clair {
+		font-size: 14px;
+	}
+
+	#experience .grid, #divers .grid {
+		display: grid;
+		grid-template-columns: 0.6fr 1.4fr;
+		margin-bottom: 10px;
+	}
+
+	#name, #email, #entreprise {
+		width: 400px;
+	}
+	
+	#object {
+		width: 750px;
+	}
+	
+	textarea {
+		width: 750px;
+	}
+
+	.footer {
+		display: grid;
+		grid-template-columns: 1.25fr 1.25fr 0.5fr;
+	}
+
+}
+
+/*
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1025px) {
+	header {
+		padding: 5px 23.4vw 15px;
+	}
+	
+	nav, section, footer {
+		padding: 0 20px;
+	}
+
+	nav {
+		display: grid;
+		grid-template-columns: auto auto auto auto auto;
+	}
+
+	nav a {
+		text-decoration: none;
+		color: white;
+		padding: 10px 10px;
+		text-align: center;
+		vertical-align: middle;
+	}
+	
+	nav a:hover {
+		background-color: #De6411;
+	}
+
+	.fa-circle {
+		font-size: 16px;
+	}
+
+	.clair {
+		font-size: 16px;
+	}
+
+	#name, #email, #entreprise {
+		width: 400px;
+	}
+	
+	#object {
+		width: 750px;
+	}
+	
+	textarea {
+		width: 750px;
+	}
+
+	.footer {
+		display: grid;
+		grid-template-columns: 1.25fr 1.25fr 0.5fr;
+	}
+
+}
+
+/*
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1025px) and (orientation: landscape) {
+	
+	header {
+		padding: 5px 23.4vw 15px;
+	}
+	
+	nav, section, footer {
+		padding: 0 20px;
+	}
+
+	nav a {
+		text-decoration: none;
+		color: white;
+		padding: 10px 10px;
+		text-align: center;
+		vertical-align: middle;
+	}
+	
+	nav a:hover {
+		background-color: #De6411;
+	}
+
+	.puces_competences {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+
+	.fa-circle {
+		font-size: 14px;
+	}
+
+	.clair {
+		font-size: 14px;
+	}
+
+	#name, #email, #entreprise {
+		width: 400px;
+	}
+	
+	#object {
+		width: 750px;
+	}
+	
+	textarea {
+		width: 750px;
+	}
+
+	.footer {
+		display: grid;
+		grid-template-columns: 1.25fr 1.25fr 0.5fr;
+	}
+
+}
+
+/*
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+	/*.fa-circle {
+		font-size: 16px;
+	}*/
+
+	nav, section, footer {
+		padding: 0 40px;
+	}
+
+	nav {
+		display: grid;
+		grid-template-columns: auto auto auto auto auto;
+		text-align: center;
+	}
+
+	nav a {
+		text-decoration: none;
+		color: white;
+		padding: 20px 20px;
+		text-align: center;
+		vertical-align: middle;
+	}
+
+	header {
+		padding: 5px 15vw 15px;
+	}
+
+	#name, #email, #entreprise, #object, textarea {
+		width: 100%;
+	}
+
+}
+
+/*
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+
+	/*
+	.fa-circle {
+		font-size: 10px;
+	}
+
+	.clair {
+		font-size: 10px;
+	}*/
+
+	nav, section, footer {
+		padding: 0 20px;
+	}
+
+	nav {
+		text-align: center;
+	}
+
+	nav a {
+		text-decoration: none;
+		color: white;
+		padding: 0 20px;
+		line-height: 2;
+		vertical-align: middle;
+	}
+
+	header {
+		padding: 5px 20px 15px;
+	}
+
+	#name, #email, #entreprise, #object, textarea {
+		width: 100%;
+	}
+
+	.date_bordure {
+		font-weight: 800;
+	}
+
+}
+
+
+
+/* changer taille colonnes compétences ? */
