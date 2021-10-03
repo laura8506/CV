@@ -33,7 +33,6 @@ nav {
 nav a {
 	text-decoration: none;
 	color: white;
-	text-align: center;
 	vertical-align: middle;
 }
 
@@ -194,71 +193,19 @@ h3 {
   ##Screen = 1281px to higher resolution desktops
 */
 
-@media (min-width: 1281px) {
+@media (min-width: 1280px) {
 	header {
 		padding: 5px 23.4vw 15px;
 	}
 	
-	nav, section, footer {
+	section, footer {
 		padding: 0 23.4vw;
 	}
 
-	nav a {
-		text-decoration: none;
-		color: white;
-		padding: 10px 10px;
-		text-align: center;
-		vertical-align: middle;
-	}
-	
-	nav a:hover {
-		background-color: #De6411;
-	}
-
-	.puces_competences {
+	nav {
 		display: grid;
-		grid-template-columns: 1fr 1fr 1fr;
-	}
-
-	.fa-circle {
-		font-size: 16px;
-	}
-
-	.clair {
-		font-size: 16px;
-	}
-
-	#name, #email, #entreprise {
-		width: 400px;
-	}
-	
-	#object {
-		width: 750px;
-	}
-	
-	textarea {
-		width: 750px;
-	}
-
-	.footer {
-		display: grid;
-		grid-template-columns: 1.25fr 1.25fr 0.5fr;
-	}
-
-}
-
-/*
-  ##Device = Laptops, Desktops
-  ##Screen = B/w 1025px to 1280px
-*/
-
-@media (min-width: 1026px) and (max-width: 1280px) {
-	header {
-		padding: 5px 23.4vw 15px;
-	}
-	
-	nav, section, footer {
-		padding: 0 10vw;
+		grid-template-columns: auto auto auto auto auto;
+		padding: 0 15vw;
 	}
 
 	nav a {
@@ -279,17 +226,11 @@ h3 {
 	}
 
 	.fa-circle {
-		font-size: 14px;
+		font-size: 16px;
 	}
 
 	.clair {
-		font-size: 14px;
-	}
-
-	#experience .grid, #divers .grid {
-		display: grid;
-		grid-template-columns: 0.6fr 1.4fr;
-		margin-bottom: 10px;
+		font-size: 16px;
 	}
 
 	#name, #email, #entreprise {
@@ -297,16 +238,110 @@ h3 {
 	}
 	
 	#object {
-		width: 750px;
+		width: 650px;
 	}
 	
 	textarea {
-		width: 750px;
+		width: 650px;
 	}
 
 	.footer {
 		display: grid;
 		grid-template-columns: 1.25fr 1.25fr 0.5fr;
+	}
+
+	.grid {
+		display: grid;
+		grid-template-columns: 0.7fr 1.3fr;
+		margin-bottom: 10px;
+	}
+	
+	.paragraphe_tableau {
+		margin: 0;
+		padding: 0;
+	}
+	
+	.date_bordure {
+		border-right: 4px solid #De6411;
+		margin-right: 10px;
+		padding-bottom: 50px;
+	}
+
+}
+
+/*
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+	header {
+		padding: 5px 23.4vw 15px;
+	}
+	
+	nav, section, footer {
+		padding: 0 10vw;
+	}
+
+	nav {
+		display: grid;
+		grid-template-columns: auto auto auto auto auto;
+	}
+
+	nav a {
+		padding: 10px 10px;
+		text-align: center;
+	}
+	
+	nav a:hover {
+		background-color: #De6411;
+	}
+
+	.puces_competences {
+		display: grid;
+		grid-template-columns: 0.9fr 1.1fr 1fr;
+	}
+
+	.fa-circle {
+		font-size: 14px;
+	}
+
+	.clair {
+		font-size: 14px;
+	}
+
+	#name, #email, #entreprise {
+		width: 400px;
+	}
+	
+	#object {
+		width: 95%;
+	}
+	
+	textarea {
+		width: 95%;
+	}
+
+	.footer {
+		display: grid;
+		grid-template-columns: 1.25fr 1.25fr 0.5fr;
+	}
+
+	.grid {
+		display: grid;
+		grid-template-columns: 0.5fr 1.5fr;
+		margin-bottom: 10px;
+	}
+	
+	.paragraphe_tableau {
+		margin: 0;
+		padding: 0;
+	}
+	
+	.date_bordure {
+		border-right: 4px solid #De6411;
+		margin-right: 10px;
+		padding-bottom: 50px;
 	}
 
 }
@@ -316,7 +351,7 @@ h3 {
   ##Screen = B/w 768px to 1024px
 */
 
-@media (min-width: 768px) and (max-width: 1025px) {
+@media (min-width: 825px) and (max-width: 1025px) {
 	header {
 		padding: 5px 23.4vw 15px;
 	}
@@ -331,15 +366,17 @@ h3 {
 	}
 
 	nav a {
-		text-decoration: none;
-		color: white;
 		padding: 10px 10px;
 		text-align: center;
-		vertical-align: middle;
 	}
 	
 	nav a:hover {
 		background-color: #De6411;
+	}
+
+	.puces_competences {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
 	}
 
 	.fa-circle {
@@ -355,16 +392,104 @@ h3 {
 	}
 	
 	#object {
-		width: 750px;
+		width: 95%;
 	}
 	
 	textarea {
-		width: 750px;
+		width: 95%;
 	}
 
 	.footer {
 		display: grid;
 		grid-template-columns: 1.25fr 1.25fr 0.5fr;
+	}
+
+	.grid {
+		display: grid;
+		grid-template-columns: 0.5fr 1.5fr;
+		margin-bottom: 10px;
+	}
+	
+	.paragraphe_tableau {
+		margin: 0;
+		padding: 0;
+	}
+	
+	.date_bordure {
+		border-right: 4px solid #De6411;
+		margin-right: 10px;
+		padding-bottom: 50px;
+	}
+
+}
+
+@media (min-width: 767px) and (max-width: 825px) {
+	header {
+		padding: 5px 23.4vw 15px;
+	}
+	
+	nav, section, footer {
+		padding: 0 0;
+	}
+
+	nav {
+		text-align: center;
+	}
+
+	nav a {
+		display: block;
+		padding: 10px 20px;
+	}
+	
+	nav a:hover {
+		background-color: #De6411;
+	}
+
+	.puces_competences {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+
+	.fa-circle {
+		font-size: 16px;
+	}
+
+	.clair {
+		font-size: 16px;
+	}
+
+	#name, #email, #entreprise {
+		width: 400px;
+	}
+	
+	#object {
+		width: 95%;
+	}
+	
+	textarea {
+		width: 95%;
+	}
+
+	.footer {
+		display: grid;
+		grid-template-columns: 1.5fr 1.15fr 0.65fr;
+	}
+
+	.grid {
+		display: grid;
+		grid-template-columns: 0.6fr 1.4fr;
+		margin-bottom: 10px;
+	}
+	
+	.paragraphe_tableau {
+		margin: 0;
+		padding: 0;
+	}
+	
+	.date_bordure {
+		border-right: 4px solid #De6411;
+		margin-right: 10px;
+		padding-bottom: 50px;
 	}
 
 }
@@ -374,7 +499,7 @@ h3 {
   ##Screen = B/w 768px to 1024px
 */
 
-@media (min-width: 768px) and (max-width: 1025px) and (orientation: landscape) {
+@media (min-width: 825px) and (max-width: 1025px) and (orientation: landscape) {
 	
 	header {
 		padding: 5px 23.4vw 15px;
@@ -385,11 +510,8 @@ h3 {
 	}
 
 	nav a {
-		text-decoration: none;
-		color: white;
 		padding: 10px 10px;
 		text-align: center;
-		vertical-align: middle;
 	}
 	
 	nav a:hover {
@@ -414,16 +536,105 @@ h3 {
 	}
 	
 	#object {
-		width: 750px;
+		width: 95%;
 	}
 	
 	textarea {
-		width: 750px;
+		width: 95%;
 	}
 
 	.footer {
 		display: grid;
 		grid-template-columns: 1.25fr 1.25fr 0.5fr;
+	}
+
+	.grid {
+		display: grid;
+		grid-template-columns: 0.5fr 1.5fr;
+		margin-bottom: 10px;
+	}
+	
+	.paragraphe_tableau {
+		margin: 0;
+		padding: 0;
+	}
+	
+	.date_bordure {
+		border-right: 4px solid #De6411;
+		margin-right: 10px;
+		padding-bottom: 50px;
+	}
+
+}
+
+@media (min-width: 767px) and (max-width: 825px) and (orientation: landscape) {
+	
+	header {
+		padding: 5px 23.4vw 15px;
+	}
+	
+	nav, section, footer {
+		padding: 0 0;
+	}
+
+	nav {
+		text-align: center;
+	}
+
+	nav a {
+		display: block;
+		padding: 10px 20px;
+	}
+	
+	nav a:hover {
+		background-color: #De6411;
+	}
+
+	.puces_competences {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+
+	.fa-circle {
+		font-size: 14px;
+	}
+
+	.clair {
+		font-size: 14px;
+	}
+
+	#name, #email, #entreprise {
+		width: 400px;
+	}
+	
+	#object {
+		width: 95%;
+	}
+	
+	textarea {
+		width: 95%;
+	}
+
+	.footer {
+		display: grid;
+		grid-template-columns: 1.5fr 1.15fr 0.65fr;
+	}
+
+	.grid {
+		display: grid;
+		grid-template-columns: 0.6fr 1.4fr;
+		margin-bottom: 10px;
+	}
+	
+	.paragraphe_tableau {
+		margin: 0;
+		padding: 0;
+	}
+	
+	.date_bordure {
+		border-right: 4px solid #De6411;
+		margin-right: 10px;
+		padding-bottom: 50px;
 	}
 
 }
@@ -433,35 +644,57 @@ h3 {
   ##Screen = B/w 481px to 767px
 */
 
-@media (min-width: 481px) and (max-width: 767px) {
-	/*.fa-circle {
-		font-size: 16px;
-	}*/
+@media (min-width: 480px) and (max-width: 767px) {
+
+	.fa-circle {
+		font-size: 14px;
+	}
+
+	.clair {
+		font-size: 14px;
+	}
 
 	nav, section, footer {
-		padding: 0 40px;
+		padding: 0 0;
 	}
 
 	nav {
-		display: grid;
-		grid-template-columns: auto auto auto auto auto;
 		text-align: center;
 	}
 
 	nav a {
-		text-decoration: none;
-		color: white;
-		padding: 20px 20px;
-		text-align: center;
-		vertical-align: middle;
+		display: block;
+		padding: 10px 0;
+	}
+
+	nav a:hover {
+		background-color: #De6411;
 	}
 
 	header {
-		padding: 5px 15vw 15px;
+		padding: 5px 20px 15px;
 	}
 
 	#name, #email, #entreprise, #object, textarea {
-		width: 100%;
+		width: 95%;
+	}
+
+	.paragraphe_tableau {
+		margin: 0 0 20px;
+	}
+
+	.date_bordure {
+		font-weight: 800;
+		margin: 5px 0;
+	}
+
+	.footer {
+		display: grid;
+		grid-template-columns: 1.2fr 0.8fr;
+	}
+
+	.marge_footer {
+		margin-left: 20px;
 	}
 
 }
@@ -473,17 +706,17 @@ h3 {
 
 @media (min-width: 320px) and (max-width: 480px) {
 
-	/*
+	
 	.fa-circle {
-		font-size: 10px;
+		font-size: 14px;
 	}
 
 	.clair {
-		font-size: 10px;
-	}*/
+		font-size: 14px;
+	}
 
 	nav, section, footer {
-		padding: 0 20px;
+		padding: 0 0;
 	}
 
 	nav {
@@ -491,11 +724,12 @@ h3 {
 	}
 
 	nav a {
-		text-decoration: none;
-		color: white;
-		padding: 0 20px;
-		line-height: 2;
-		vertical-align: middle;
+		display: block;
+		padding: 10px 20px;
+	}
+
+	nav a:hover {
+		background-color: #De6411;
 	}
 
 	header {
@@ -503,15 +737,65 @@ h3 {
 	}
 
 	#name, #email, #entreprise, #object, textarea {
-		width: 100%;
+		width: 95%;
+	}
+
+	.paragraphe_tableau {
+		margin: 0 0 20px;
 	}
 
 	.date_bordure {
 		font-weight: 800;
+		margin: 5px 0;
 	}
 
 }
 
+@media (max-width: 320px) {
 
+	
+	.fa-circle {
+		font-size: 14px;
+	}
+
+	.clair {
+		font-size: 14px;
+	}
+
+	nav, section, footer {
+		padding: 0 0;
+	}
+
+	nav {
+		text-align: center;
+	}
+
+	nav a {
+		display: block;
+		padding: 10px 20px;
+	}
+
+	nav a:hover {
+		background-color: #De6411;
+	}
+
+	header {
+		padding: 5px 20px 15px;
+	}
+
+	#name, #email, #entreprise, #object, textarea {
+		width: 95%;
+	}
+
+	.paragraphe_tableau {
+		margin: 0 0 20px;
+	}
+
+	.date_bordure {
+		font-weight: 800;
+		margin: 5px 0;
+	}
+
+}
 
 /* changer taille colonnes compétences ? */
