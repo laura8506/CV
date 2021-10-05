@@ -238,11 +238,11 @@ h3 {
 	}
 	
 	#object {
-		width: 650px;
+		width: 95%;
 	}
 	
 	textarea {
-		width: 650px;
+		width: 95%;
 	}
 
 	.footer {
@@ -797,5 +797,3 @@ h3 {
 	}
 
 }
-
-/* changer taille colonnes compétences ? */
